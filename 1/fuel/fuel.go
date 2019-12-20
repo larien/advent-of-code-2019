@@ -1,17 +1,10 @@
 package fuel
 
 import (
-	"fmt"
 	"math"
 )
 
-func Calculator(mass float64) int {
-	mass /= 3
-
-	mass = math.Floor(mass)
-
-	mass -= 2
-
-	fmt.Println(mass)
-	return int(mass)
+func Calculator(mass float64) (fuel int) {
+	fuel = int(math.Floor(mass/3) - 2)
+	return
 }
