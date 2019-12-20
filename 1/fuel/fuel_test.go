@@ -11,9 +11,9 @@ func TestCalculator(t *testing.T) {
 		expected int
 	}{
 		{12, 2},
-		// {14, 3},
-		// {1969, 654},
-		// {100756, 33583},
+		{14, 2},
+		{1969, 654},
+		{100756, 33583},
 	}
 	for index, test := range tests {
 		testName := fmt.Sprintf("Calculator (%d)", index)
