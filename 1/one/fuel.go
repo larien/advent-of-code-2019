@@ -4,6 +4,7 @@ import (
 	"math"
 )
 
+// Sum receives a numeric array and calculates each element into a total sum.
 func Sum(input []float64) (sum int) {
 	for _, v := range input {
 		sum += calculator(v)
